@@ -1,0 +1,37 @@
+[
+    {
+        "photo": "img\/1.jpg",
+        "name": "Tuna",
+        "price": "1600",
+        "category": "0",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "photo": "img\/2.jpg",
+        "name": "Sashimi",
+        "price": "6500",
+        "category": "1",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "photo": "img\/ramen1.jpg",
+        "name": "Plain Ramen",
+        "price": "2500",
+        "category": "2",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "photo": "img\/a1.jpg",
+        "name": "Gyoza",
+        "price": "2000",
+        "category": "3",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "photo": "img\/rice1.jpg",
+        "name": "Rice and Sesame",
+        "price": "1000",
+        "category": "4",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+]
