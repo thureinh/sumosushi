@@ -1,9 +1,7 @@
 $(function () {
 	
 	showTable();
-
-	$('.btn-addtocart').click(function() {
-		
+	$('div.tab-pane').on('click', '.btn-addtocart', function(){
 		let id = $(this).data('id');
 		let name = $(this).data('name');
 		let price = $(this).data('price');

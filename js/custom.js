@@ -58,19 +58,19 @@ $(function(){
 				$.each(sushiObjArray, function(i, v){
 					switch(parseInt(v.category)) {
 					  	case 0:
-					    	sushi += getCards(v);
+					    	sushi += getCards(i, v);
 					    	break;
 					  	case 1:
-					    	bebo += getCards(v);
+					    	bebo += getCards(i, v);
 					    	break;
 					    case 2:
-					    	ramen += getCards(v);
+					    	ramen += getCards(i, v);
 					    	break;
 					    case 3:
-					    	appe += getCards(v);
+					    	appe += getCards(i, v);
 					    	break;
 					    case 4:
-					    	rice += getCards(v);
+					    	rice += getCards(i, v);
 					    	break;
 					  	default:
 					  		//code block
@@ -84,7 +84,7 @@ $(function(){
 			}		
 		})
 	}
-	function getCards(v){
+	function getCards(i, v){
 		html = `
 			<div class="col-6 col-lg-4 mb-5">
 				<div class="card">
@@ -93,11 +93,12 @@ $(function(){
 					<div class="card-body">
 						<h5 class="card-title text-center mb-2">${v.name}</h5>
 						<hr>
-						<button class="btn btn-outline-danger btn-block btn-addtocart" data-id="1" data-name="Tuna" data-price="1600">Add to Cart</button>
+						<button class="btn btn-outline-danger btn-block btn-addtocart" data-id="${i}" data-name="${v.name}" data-price=${v.price}>Add to Cart</button>
 					</div>
 				</div>
 			</div>
 			`;
 		return html;
 	}
+
 })
